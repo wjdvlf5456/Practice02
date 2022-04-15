@@ -19,14 +19,14 @@ public class Ex05 {
 		double standard = (double)(stature-100)*0.9; 
 		
 		
-		if (standard<weight) {
+		if (standard>weight) {				//--> 부등호방향 틀림
 			System.out.print("저체중");
 			
-		} else if (standard>weight) {
+		} else if (standard<weight) {		
 			System.out.print("과체중");
 			
 		} else {
-			System.out.println("표준");			//--> println 이 아니라 print를 사용해야 한다.
+			System.out.print("표준");			//--> println 이 아니라 print를 사용해야 한다.
 			
 		}
 		System.out.println(" 입니다.");
