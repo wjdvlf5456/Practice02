@@ -13,6 +13,12 @@ public class Ex02 {
 		}*/
 		
 		
+		//  정답  
+		int x = 0;
+		
+		if (x==0) {
+			System.out.println("x=0이다.");
+		}
 		
 	}
 
