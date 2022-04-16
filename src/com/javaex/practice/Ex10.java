@@ -27,13 +27,22 @@ public class Ex10 {
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("사번을 입력하세요.");
+		System.out.print("사번: ");
 		int num = sc.nextInt();
 		
+		if (num%3==0) {
+			System.out.print("A");
+			
+		} else if (num%3==1){
+			System.out.print("B");
+			
+		} else {
+			System.out.print("C");
+			
+		}
 		
-		
-		
+		System.out.println("팀입니다.");
 		sc.close();
-		
 		
 	}
 
