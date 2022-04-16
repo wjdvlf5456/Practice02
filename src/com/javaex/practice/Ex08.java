@@ -33,7 +33,18 @@ public class Ex08 {
 		System.out.print("숫자3: ");
 		int num3 = sc.nextInt();
 		
+		System.out.print("가장 작은수는 ");
+		if (num2>=num3 && num3>=num1) {
+			System.out.print(num1);
+			
+		} else if (num3>=num1 && num1>=num2) {
+			System.out.print(num2);
 		
+		} else if (num1>=num2 && num2>=num3) {
+			System.out.print(num3);
+			
+		}
+		System.out.println(" 입니다.");
 		sc.close();
 		
 	}
