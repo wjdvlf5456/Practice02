@@ -17,11 +17,14 @@ public class Ex06 {
 		
 		if (num1>num2) {
 			System.out.print("큰수: "+num1+"\t작은수: "+num2);
-			
+		} else if (num1<num2) {
+			System.out.print("큰수: "+num2+"\t작은수: "+num1);
 		}
+		 else {
+			 System.out.print("큰수: "+num1+"\t작은수: "+num2);
+		 }
+			
 		System.out.println("입니다.");
-		
-		
 		
 		sc.close();
 
