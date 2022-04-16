@@ -6,8 +6,6 @@ public class Ex08 {
 	
 	public static void main(String[] args) {
 		
-		Scanner sc = new Scanner(System.in);
-		
 		//문제 8번 : 숫자(정) 3개를 입력받아 가장 작은 수를 출력하세요.
 		
 		/*
@@ -16,8 +14,24 @@ public class Ex08 {
 	 	대신 참거짓은  앞에 부등호는 참인지 거짓인지 상관없고 
 		 */
 		
+		/*
+	 	위에 내용에서 참고하여 1>2  2>3로 놓고 사이에 둘 다 true여야 하는 &&을 넣어준다.
+	 	그러면 1>2 && 2>3 이 둘 다 참이면 3번째 변수1이 제일 크고 2가 그 다음 순 3이 제일 작은 정수가 나온다.
+	 	이런 식으로 2>3 %% 1>2 인 경우, 3>1 && 1>2인 경우를 각각 else if 로 만들면 될 거 같다.
+		 */
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("숫자 3개를 입력하세요.");
+		System.out.print("숫자1: ");
+		int num1 = sc.nextInt();
 		
 		
+		System.out.print("숫자2: ");
+		int num2 = sc.nextInt();
+		
+		
+		System.out.print("숫자3: ");
+		int num3 = sc.nextInt();
 		
 		
 		sc.close();
