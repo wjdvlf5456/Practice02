@@ -33,8 +33,10 @@ public class Ex08 {
 		System.out.print("숫자3: ");
 		int num3 = sc.nextInt();
 		
+		// 첫번째는 아래 내용으로 출력했으나 위에서 1>2>3 이런식으로 변수를 한 줄에 연달아 놓는다고 생각하였으나 다시 생각하니 num1이 둘보다 작을 경우를 넣으면 되는 거였다. 
+		/*
 		System.out.print("가장 작은수는 ");
-		if (num2>=num3 && num3>=num1) {
+		if (num2>=num3 && num3>=num1) {			
 			System.out.print(num1);
 			
 		} else if (num3>=num1 && num1>=num2) {
@@ -46,7 +48,21 @@ public class Ex08 {
 		}
 		System.out.println(" 입니다.");
 		sc.close();
+		*/
 		
+		System.out.print("가장 작은수는 ");
+		if (num2>=num1 && num3>=num1) {			
+			System.out.print(num1);
+			
+		} else if (num1>=num2 && num3>=num2) {
+			System.out.print(num2);
+			
+		} else if (num1>=num3 && num2>=num3) {
+			System.out.print(num3);
+			
+		}
+		System.out.println(" 입니다.");
+		sc.close();
 	}
 
 }
