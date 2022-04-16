@@ -12,7 +12,9 @@ public class Ex07 {
 		
 		/*
 		먼저 두 개의 정수를 입력할 수 있는 입력공간을 스캐너와 함께 만들어 준 후 그 안에서 큰수와 작은수로 나누는 경우를 만들어 준다.
-		그 후 그 3가지 경우에 몫과 나머지가 어떻게 출력될지 변수를 넣어준다. 
+		그 후 그 3가지 경우에 몫과 나머지가 어떻게 출력될지 변수를 넣어준다.
+		
+		if문 속에 if문을 넣는게 아니라 출력되는 경우를 두개 만들어준다.
 		*/
 		
 		System.out.print("첫번째 숫자: ");
@@ -22,14 +24,19 @@ public class Ex07 {
 		int num2 = sc.nextInt();
 		
 		if (num1>num2) {
-			
+			System.out.println ("몫: "+num1/num2);
+			System.out.println ("나머지: "+num1%num2);
 			
 		} else if (num2>num1) {	
+			System.out.println ("몫: "+num1/num2);
+			System.out.println ("나머지: "+num1%num2);
 			
 			
+		} else {
+		System.out.println ("몫: "+num1/num2);
+		System.out.println ("나머지: "+num1%num2);
+		
 		}
-		
-		
 		
 		sc.close();
 
