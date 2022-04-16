@@ -24,24 +24,27 @@ public class Ex10 {
 		//2. 조건을 변수1% && 변수2==0,1,2 3가지로 나누어서 출력하게 한다.   --> 변수 하나만 사용  --   틀림
 		*/
 		
+		
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("사번을 입력하세요.");
+		
 		System.out.print("사번: ");
 		int num = sc.nextInt();
 		
 		if (num%3==0) {
-			System.out.print("A");
+			System.out.print("A팀입니다");
 			
 		} else if (num%3==1){
-			System.out.print("B");
+			System.out.print("B팀입니다");
+			
+		} else if (num%3==2) {
+			System.out.print("C팀입니다");
 			
 		} else {
-			System.out.print("C");
-			
+			System.out.println("잘못입력하셨습니다.");		//--> 음수때문에 else를 따로 입력해주어야 한다.
 		}
 		
-		System.out.println("팀입니다.");
 		sc.close();
 		
 	}
