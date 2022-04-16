@@ -28,8 +28,8 @@ public class Ex07 {
 			System.out.println ("나머지: "+num1%num2);
 			
 		} else if (num2>num1) {	
-			System.out.println ("몫: "+num1/num2);
-			System.out.println ("나머지: "+num1%num2);
+			System.out.println ("몫: "+num2/num1);  //-->num2가 더 크니 두 변수의 위치를 바꾸어줘야했다.
+			System.out.println ("나머지: "+num2%num1);
 			
 			
 		} else {
