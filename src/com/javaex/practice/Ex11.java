@@ -21,6 +21,9 @@ public class Ex11 {
 		
 		 */
 		
+		
+		
+		//정답
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("알파벳 1글자(소문자)를 입력하세요.");
