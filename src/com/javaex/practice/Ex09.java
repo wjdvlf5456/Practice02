@@ -29,18 +29,19 @@ public class Ex09 {
 		
 		//변수1이 변수2보다 큰경우
 		if (num1>num2 && num1%num2==0) {
-				System.out.print(num1+" 는(은) "+num2+" 의 약수입니다.");
+				System.out.print(num2+" 는(은) "+num1+" 의 약수입니다.");
 				
 		} else if (num1>num2 && num1%num2!=0){		
-			System.out.print(num1+" 는(은) "+num2+" 의 약수가 아닙니다.");
+			System.out.print(num2+" 는(은) "+num1+" 의 약수가 아닙니다.");
 				
 		//변수2가 변수1보다 큰경우
 		} else if (num2>num1 && num2%num1==0){
-			System.out.print(num2+" 는(은) "+num1+" 의 약수입니다.");
+			System.out.print(num1+" 는(은) "+num2+" 의 약수입니다.");
 			
 		} else {
-			System.out.print(num2+" 는(은) "+num1+" 의 약수가 아닙니다.");
+			System.out.print(num1+" 는(은) "+num2+" 의 약수가 아닙니다.");
 		}
+		// 변수위치 제대로 맞추어주었는지 무조건 확인
 		
 		sc.close();
 
