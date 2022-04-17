@@ -26,7 +26,6 @@ public class Ex09 {
 		System.out.print("두번째 숫자: ");
 		int num2 = sc.nextInt();
 		
-		
 		//변수1이 변수2보다 큰경우
 		if (num1>num2 && num1%num2==0) {
 				System.out.print(num2+" 는(은) "+num1+" 의 약수입니다.");

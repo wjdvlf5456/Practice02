@@ -1,5 +1,7 @@
 package com.javaex.practice;
 
+import java.util.Scanner;
+
 public class Ex12 {
 	
 	public static void main(String[] args) {
@@ -22,6 +24,57 @@ public class Ex12 {
 		3. 결과는 실수형으로 나와야 하니 중간에 double을 사용해준다.
 		 */
 		
+		// 문제 풀어보기
+		
+		Scanner sc = new Scanner(System.in);
+		
+		// ===================== 입력란 =====================
+		System.out.println("출력되는 내용을 입력하세요.");
+		System.out.print("기호: ");
+		String sign = sc.nextLine();
+		
+		System.out.print("숫자1: ");
+		int num1 = sc.nextInt();
+		
+		System.out.print("숫자2: ");
+		int num2 = sc.nextInt();
+		
+		// ===================== 조건문 시작 =====================
+		switch (sign) {
+			case "+":
+				System.out.print(num1+num2);
+				System.out.print("결과는: "+sign);
+				break;
+	
+			case "-":
+				System.out.print(num1-num2);
+				System.out.print("결과는: "+sign);
+				break;
+				
+			case "*":
+				System.out.print(num1*num2);
+				System.out.print("결과는: "+sign);
+				break;
+				
+			case "/":
+				
+				if (num2==0) {
+					System.out.print("계산할 수 없습니다.");			// --> 분모가 숫자 '0' 일시 출력
+				}
+				
+				System.out.print(num1/num2);
+				System.out.print("결과는: "+sign);
+				break;
+				
+			default:
+				System.out.println("계산할 수 없는 기호입니다.");
+				break;
+		}
+		// ===================== 조건문 끝 =====================
+		
+		
+		
+		sc.close();
 		
 		
 	}
