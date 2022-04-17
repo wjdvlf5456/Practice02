@@ -31,27 +31,30 @@ public class Ex14 {
 		System.out.print("금액");
 		int cash = sc.nextInt();
 		
+		double tax;
+		
 		if (cash>=8000) {
-			
+			tax = (cash - 8000)*0.36 + 4000*0.27 + 0.3000*0.18 + 1000*0.09;
+			System.out.print("소득세는 "+tax+"입니다.");
 			
 		} else if (cash>4000) {
+			tax = (cash-4000)*0.27 + 0.3000*0.18 + 1000*0.09;
+			System.out.print("소득세는 "+tax+"입니다.");
 			
 			
 		} else if (cash>1000) {
+			tax = (cash-1000)*0.18 + 1000*0.09;
+			System.out.print("소득세는 "+tax+"입니다.");
 			
 			
 		} else if (cash>=0) {
-			
+			tax = cash*0.09;
+			System.out.print("소득세는 "+tax+"입니다.");
 			
 		} else {
-			System.out.println("잘못 입력했습니다.");
+			System.out.println("잘못입력했습니다.");
 			
 		}
-		
-		
-		
-		
-		
 		
 		sc.close();
 		
