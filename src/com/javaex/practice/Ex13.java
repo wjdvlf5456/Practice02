@@ -4,7 +4,7 @@ import	java.util.Scanner;
 
 public class Ex13 {
 	
-	public static void main(System[] args) {
+	public static void main(String[] args) {		//<--String 오타
 		
 		/*
 		문제13번: 다음과 같이 정의되는 함수의 함수값을 계산해보자.
@@ -39,6 +39,7 @@ public class Ex13 {
 		}
 		
 		sc.close();
+		//====================== 문제풀이 끝 ======================
 		
 	}
 
