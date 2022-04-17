@@ -16,11 +16,37 @@ public class Ex14 {
 		*/
 		
 		
-		
-		
+		/*
+		문제풀이 예상
+			음수를 포함하여 입력되는 숫자의 경우의 수는 5가지로 나누어주어 만들어준다.
+			그리고 입력되는 변수는 하나뿐이니 switch ~ case 문으로 작성하여도 된다.
+		*/
 		
 		
 		Scanner sc = new Scanner(System.in);
+		
+		
+		System.out.println("수익을 입력해 주세요");
+		
+		System.out.print("금액");
+		int cash = sc.nextInt();
+		
+		if (cash>=8000) {
+			
+			
+		} else if (cash>4000) {
+			
+			
+		} else if (cash>1000) {
+			
+			
+		} else if (cash>=0) {
+			
+			
+		} else {
+			System.out.println("잘못 입력했습니다.");
+			
+		}
 		
 		
 		
