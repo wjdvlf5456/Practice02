@@ -25,8 +25,9 @@ public class Ex12 {
 		 */
 		
 		// 문제 풀어보기
-		
+		// ===================== 첫번째 풀이 시작 =====================
 		Scanner sc = new Scanner(System.in);
+		
 		
 		// ===================== 입력란 =====================
 		System.out.println("출력되는 내용을 입력하세요.");
@@ -47,13 +48,13 @@ public class Ex12 {
 				break;
 	
 			case "-":
-				System.out.print(num1-num2);
 				System.out.print("결과는: "+sign);
+				System.out.print(num1-num2);
 				break;
 				
 			case "*":
-				System.out.print(num1*num2);
 				System.out.print("결과는: "+sign);
+				System.out.print(num1*num2);
 				break;
 				
 			case "/":
@@ -62,19 +63,36 @@ public class Ex12 {
 					System.out.print("계산할 수 없습니다.");			// --> 분모가 숫자 '0' 일시 출력
 				}
 				
-				System.out.print(num1/num2);
 				System.out.print("결과는: "+sign);
+				System.out.print(num1/num2);
 				break;
 				
 			default:
 				System.out.println("계산할 수 없는 기호입니다.");
 				break;
 		}
-		// ===================== 조건문 끝 =====================
-		
-		
 		
 		sc.close();
+		
+		// ===================== 조건문 끝 =====================
+		
+		// ===================== 첫번째 풀이 끝  ======================
+		
+		/* 
+		첫 시도에서는 결과가 기호, 숫자1, 숫자2 가 그대로 출력되어 '결과는: *294' 라고 잘못 출력되었다.
+		심지어 분모가 0일때에는 계산할 수 없습니다.결과는: /Exception in thread "main" java.lang.ArithmeticException: / by 
+		zero
+			at com.javaex.practice.Ex12.main(Ex12.java:67)
+		라는 에러까지 나왔다.
+		
+		default값은 제대로 나왔다.
+		 */
+		
+		
+		
+		
+		
+		
 		
 		
 	}
